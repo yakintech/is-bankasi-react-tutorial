@@ -10,6 +10,8 @@ function StateArraySample() {
 
 
 
+
+
     const deleteCity = (item) => {
         let newCities = cities.filter(city => city != item);
         setCities(newCities);
