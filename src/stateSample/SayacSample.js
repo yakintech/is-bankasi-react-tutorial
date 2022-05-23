@@ -12,7 +12,7 @@ function SayacSample() {
     const [sayac, setSayac] = useState(0);
 
     const sayacArttir = () => {
-       setSayac(sayac + 1)
+       setSayac(21)
     }
 
     return (<>
