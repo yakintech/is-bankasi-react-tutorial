@@ -5,13 +5,17 @@ function ProductPage() {
 
 
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true)
   let navigate = useNavigate();
 
   useEffect(() => {
 
     fetch("https://northwind.vercel.app/api/products")
       .then(res => res.json())
-      .then(data => setProducts(data));
+      .then(data => {
+        setProducts(data)
+        setLoading(false);
+      });
 
   }, [])
 
@@ -21,7 +25,7 @@ function ProductPage() {
 
   }
 
-  return (<table>
+  return ( loading == true ? <h1>loading...</h1> : <table>
     <tr>
       <td>Id</td>
       <td>Name</td>
