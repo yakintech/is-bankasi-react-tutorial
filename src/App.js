@@ -1,11 +1,5 @@
-import EffectSample from "./effectSample/EffectSample";
-import FetchGetSample from "./fetchSample/FetchGetSample";
-import JsxMapSample from "./jsxSample/JsxMapSample";
-import AlarmButton from "./propsSample/AlarmButton";
-import PropEventSample from "./propsSample/PropEventSample";
-import UserDetail from "./propsSample/UserDetail";
-import SayacSample from "./stateSample/SayacSample";
-import StateArraySample from "./stateSample/StateArraySample";
+import FetchOperationSample from "./fetchSample/FetchOperationSample";
+
 
 {/* <></> Bu düğümlere fragment deniyor */ }
 function App() {
@@ -15,7 +9,7 @@ function App() {
   }
 
   return (<>
-    <FetchGetSample></FetchGetSample>
+    <FetchOperationSample></FetchOperationSample>
     {/* <StateArraySample></StateArraySample> */}
     {/* <UserDetail name='Çağatay' surname='Yıldız' age={35} city='İstanbul'></UserDetail>
     <AlarmButton color='tomato' width={200} heigth={200}></AlarmButton>
