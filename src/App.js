@@ -1,3 +1,5 @@
+import EffectSample from "./effectSample/EffectSample";
+import FetchGetSample from "./fetchSample/FetchGetSample";
 import JsxMapSample from "./jsxSample/JsxMapSample";
 import AlarmButton from "./propsSample/AlarmButton";
 import PropEventSample from "./propsSample/PropEventSample";
@@ -13,7 +15,8 @@ function App() {
   }
 
   return (<>
-    <StateArraySample></StateArraySample>
+    <FetchGetSample></FetchGetSample>
+    {/* <StateArraySample></StateArraySample> */}
     {/* <UserDetail name='Çağatay' surname='Yıldız' age={35} city='İstanbul'></UserDetail>
     <AlarmButton color='tomato' width={200} heigth={200}></AlarmButton>
     <PropEventSample merhaba={merhaba}></PropEventSample> */}
