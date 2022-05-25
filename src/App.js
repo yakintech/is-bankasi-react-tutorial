@@ -15,6 +15,8 @@ import { Content, Footer, Header } from "antd/lib/layout/layout";
 // import * as ant from "antd";
 // import * as material from "@mui/material";
 import './layout.css'
+import AddCategory from "./routerSample/AddCategory";
+import RefSample from "./otherHooks/RefSample";
 
 
 
@@ -81,6 +83,10 @@ function App() {
             <Route path="/urunler" element={<ProductPage />} />
             <Route path="/urunler/:seo" element={<ProductDetail />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/addcategory" element={<AddCategory />} />
+            <Route path="/refSample" element={<RefSample />} />
+
+
 
           </Routes>
 

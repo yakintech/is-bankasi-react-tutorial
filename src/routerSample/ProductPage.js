@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
 function ProductPage() {
@@ -8,7 +8,7 @@ function ProductPage() {
   const [loading, setLoading] = useState(true)
   let navigate = useNavigate();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
 
     fetch("https://northwind.vercel.app/api/products")
       .then(res => res.json())
